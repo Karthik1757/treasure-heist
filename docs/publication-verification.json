@@ -1,0 +1,25 @@
+{
+  "original_deployed_commit": "58930c10de364ad2e71633fbc6ab784856944899",
+  "original_gameplay_and_ui_files_byte_identical": true,
+  "applied_migrations_recovered_read_only": 5,
+  "migration_definitions_match_live_history": true,
+  "dependency_install": "passed npm ci",
+  "unit_tests": {
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0
+  },
+  "build": "passed with non-production placeholder public configuration",
+  "python_syntax_files_passed": 19,
+  "secret_scan": {
+    "regex_and_known_private_fixture_values": true,
+    "findings": 0,
+    "files_scanned": 47,
+    "limitations": "Targeted scan, not a guarantee against every possible secret format"
+  },
+  "backend_tests_rerun": false,
+  "live_game_changed": false,
+  "database_changed": false,
+  "github_publication": "awaiting owner approval and authorized GitHub account access",
+  "license_proposed": "MIT"
+}

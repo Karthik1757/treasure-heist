@@ -1,0 +1,18 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> treasure-heist@1.0.0 test
+> node --test tests/*.test.js
+
+✔ old retry receipt never regresses a newer snapshot (0.956312ms)
+✔ bank is bounded by purse and 0–4 (0.837776ms)
+✔ start requires live ready 2–6 player crew (0.627934ms)
+✔ countdown clamps to zero and uses authoritative deadline (0.197794ms)
+✔ player-controlled text is escaped (0.253186ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 96.557483

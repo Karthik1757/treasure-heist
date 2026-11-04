@@ -1,0 +1,28 @@
+{
+  "original_commit": "58930c10de364ad2e71633fbc6ab784856944899",
+  "original_tracked_file_hashes": {
+    ".gitignore": "b9b6f3340bd58064a4322a21086c80de55620c70ddfe0263b8c77d30b69ab194",
+    "README.md": "3cfca4d52d5d7d4e0b1700bcb36d3cba8de52224359d8848c4ac643a39edf60f",
+    "build.mjs": "c1c74a3f605e3239acadb31688d8224bd042355c6a584a68aabaab8b79df733a",
+    "package-lock.json": "3ed8b12f7e8d1d1d15c567006e31158ecbbc051cdb96ac2be237fb0ca2309027",
+    "package.json": "3ac76d3e92af1d50ec90d67923e19e99fa872754c7f61ead23a6bb640e9b0d85",
+    "src/app.js": "53de83865ff40fd253a1f8fdf0d138c435e7b136c4f90151c7ea9159e605e0f5",
+    "src/client.js": "c3e867982b063564c1dbd128a79670c0361432100f614be1593e71078a7f5205",
+    "src/game.js": "a0463f4e801b5fdf1eff4483fb1e8054435ad6c7a9b01b7fceff688391d4d7e5",
+    "src/index.html": "f90a2109ae1bfb4afc9803513dcc1840f336cec872db792ed389a3b38d4f1077",
+    "src/style.css": "19de11076731d6350bca3f4596beaea4712e836fb9fa80d16c11249f3b91777a",
+    "tests/game.test.js": "4ebc3d1a2e6fb30f56c7be4fd648b47d7345fa35baaf6a34ce9be63797bf4574",
+    "tests/live.mjs": "f57be4160f48c004d31ff2cff354c6f34d495902e5dea6c03ace36809da3f63a"
+  },
+  "excluded_from_history": [
+    "embedded public client configuration",
+    "hosting project identity",
+    "private credentials and session fixtures"
+  ],
+  "export_changes": [
+    "environment-based client configuration",
+    "publication documentation and license",
+    "recovered migrations and tests"
+  ],
+  "original_source_recreated": false
+}

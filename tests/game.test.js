@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {newest,secondsLeft,canStart,actionPayload,escapeHTML} from '../src/game.js';
+test('old retry receipt never regresses a newer snapshot',()=>{const current={room_id:'a',revision:12};assert.equal(newest(current,{room_id:'a',revision:9}),current);assert.equal(newest(current,{room_id:'b',revision:1}).room_id,'b');});
+test('bank is bounded by purse and 0–4',()=>{assert.deepEqual(actionPayload({kind:'defend',bank:4},{purse:2}),{kind:'defend',bank_amount:2});assert.equal(actionPayload({kind:'defend',bank:-1},{purse:8}).bank_amount,0);assert.equal(actionPayload({kind:'defend',bank:99},{purse:8}).bank_amount,4);});
+test('start requires live ready 2–6 player crew',()=>{const now=100000,player={ready:true,last_seen_at:new Date(now-1000).toISOString()};assert.equal(canStart({status:'lobby',players:[player]},now),false);assert.equal(canStart({status:'lobby',players:[player,player]},now),true);assert.equal(canStart({status:'lobby',players:[player,{...player,last_seen_at:new Date(0).toISOString()}]},now),false);});
+test('countdown clamps to zero and uses authoritative deadline',()=>{assert.equal(secondsLeft({deadline:new Date(10000).toISOString()},8001),2);assert.equal(secondsLeft({deadline:new Date(10000).toISOString()},11000),0);});
+test('player-controlled text is escaped',()=>assert.equal(escapeHTML('<img onerror="x">&'), '&lt;img onerror=&quot;x&quot;&gt;&amp;'));
